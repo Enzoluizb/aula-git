@@ -1,0 +1,66 @@
+# Atividade de Versionamento com Git
+
+## Participantes:
+- **Enzo Luiz Bertoli**
+- **Gabriel de Sousa**
+
+---
+
+## 📌 Objetivos da Atividade
+
+Esta atividade teve como foco o uso prático de versionamento de código com **Git**, incluindo:
+
+- Criação e atualização de arquivos
+- Controle de versões no Git
+- Criação e merge de branches
+- Resolução de conflitos
+- Reversão de commits
+
+---
+
+## 🛠️ Etapas Realizadas
+
+### 1. Criação de um arquivo `.txt`
+- Criado o arquivo `arquivo.txt`
+- Inserida uma linha de texto e realizada a primeira versão (`commit`)
+
+### 2. Atualização do arquivo
+- Segunda linha de texto adicionada
+- Novo commit feito para registrar essa versão
+
+### 3. Desenvolvimento de um código "Hello World"
+- Criado o arquivo `hello.js`
+- Desenvolvido um código `Hello World` diferente em duas branches:
+  - `main`
+  - `feature-hello`
+
+### 4. Geração de Conflito
+- Alterações conflitantes foram feitas em `hello.js` nas duas branches
+
+### 5. Resolução de Conflito
+- O conflito foi resolvido manualmente
+- As duas versões foram combinadas no mesmo arquivo
+
+### 6. Reversão de Commit
+- Um commit incorreto foi revertido usando `git reset` e `git reflog`
+
+---
+
+## ✅ Resultado
+
+A atividade demonstrou domínio dos principais comandos do Git e a capacidade de resolver conflitos e reverter alterações indesejadas.
+
+---
+
+## 🚀 Comandos Utilizados (resumo)
+
+```bash
+git init
+git add .
+git commit -m "mensagem"
+git checkout -b nome-da-branch
+git merge nome-da-branch
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+git reflog
+git checkout <hash> -- arquivo
